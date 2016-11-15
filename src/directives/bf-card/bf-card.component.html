@@ -1,0 +1,17 @@
+<md-card class= "bf-card">
+  <md-card-subtitle>{{title}} <span class="header-filler"></span> 
+  		<ng-content select = "bf-card-subtitle"></ng-content>
+  </md-card-subtitle> 		
+  <md-divider></md-divider>
+    <md-card-content>
+    	<ng-content select = "bf-card-content"></ng-content>
+    </md-card-content>
+     <md-divider></md-divider>
+    <md-card-actions>
+    	 <button md-button>{{action}}
+      	<div style="flex: 1 1 auto;"></div>
+      	<md-icon style="align-items: center; flex: 1;" svgSrc="/assets/ic_keyboard_arrow_down_black_36px.svg"></md-icon>
+      </button>    
+    </md-card-actions>
+</md-card>
+<hello-world></hello-world>

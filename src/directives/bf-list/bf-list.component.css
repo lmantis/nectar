@@ -1,0 +1,24 @@
+.bf-list  md-list-item [md-list-avatar] {
+	width: 123px;
+	height: 69px;
+	border-radius:initial;
+}
+
+.bf-list md-list-item h3 {
+	font-weight: normal;
+}
+
+.bf-list p {
+	margin: 8px 0px 1px 0px;
+    opacity :0.5;
+}
+
+.bf-list md-divider {
+	margin: 8px 0px 8px 0px;
+    opacity: 0.4;
+    color: rgba(0, 0, 0, 0.12)
+}
+
+.bf-list md-divider:last-of-type {
+  	display:none;
+}
