@@ -1,24 +1,24 @@
 import {NgModule, ModuleWithProviders} from '@angular/core';
 
 import { HelloWorldModule } from './index';
-import { BfBadgeModule } from './index';
-import { BfCardModule } from './index';
-import { BfListModule } from './index';
+//import { BfBadgeModule } from './index';
+//import { BfCardModule } from './index';
+//import { BfListModule } from './index';
 
 const NECTAR_MODULES = [
-	HelloWorldModule,
-	BfBadgeModule,
-	BfCardModule,
-	BfListModule
+	HelloWorldModule
+	//BfBadgeModule,
+	//BfCardModule,
+	//BfListModule
 ];
 
 
 @NgModule({
 	imports: [
-	HelloWorldModule.forRoot(),
-	BfBadgeModule.forRoot (),
-	BfCardModule.forRoot (),
-	BfListModule.forRoot ()
+	HelloWorldModule.forRoot()
+	//BfBadgeModule.forRoot (),
+	//BfCardModule.forRoot (),
+	//BfListModule.forRoot ()
 	],
 	exports: NECTAR_MODULES
 })

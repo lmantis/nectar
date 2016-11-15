@@ -18,7 +18,7 @@ export class BfListComponent implements OnInit {
 
 @NgModule({
   exports: [
-    BfListComponent,
+    BfListComponent
   ],
   declarations: [
     BfListComponent
