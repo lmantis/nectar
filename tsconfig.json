@@ -7,7 +7,7 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "declaration": true,
-    "outDir": "./dist"
+    "outDir": "./nectar"
   },
   "files": [
     "typings/index.d.ts",
@@ -15,6 +15,6 @@
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "nectar"
   ]
 }

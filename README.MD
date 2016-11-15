@@ -5,7 +5,7 @@
 To install this library, run:
 
 ```bash
-$ npm install nectar --save
+$ npm install nectar-lib --save
 ```
 
 ## Development
