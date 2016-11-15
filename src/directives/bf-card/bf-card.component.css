@@ -1,0 +1,49 @@
+
+.bf-card{
+	border: 2px solid rgba(0, 0, 0, 0.12);
+	box-shadow:none;
+	transition:none;
+	will change:none;
+	width: 48%;
+	padding: initial;
+
+}
+
+.bf-card md-card-subtitle {
+    font-size: 14px;
+    padding: 14px 0px 0px 14px;
+    opacity: 0.66;
+    display: flex;
+ }
+
+.bf-card md-divider {
+	margin: 4px 0px 4px 0px;
+    opacity: 0.5;
+    color: rgba(0, 0, 0, 0.12)
+}
+
+.bf-card md-card-actions {
+	/*margin: 0px 0px 8px 14px;
+	padding: 10px 0;*/
+	margin: 0;
+	padding: 0;
+    
+}
+
+.bf-card md-card-actions [md-button]{
+	display:flex;
+	background: none;
+	opacity: 0.4;
+	font-weight: bold;
+	padding:0;
+	/* width: 100%; */
+	padding: 10px 0px 22px 16px;
+}
+
+bf-card md-card-actions span.md-button-wrapper{
+	width: 100%;
+}
+
+.header-filler {
+  flex: 1 1 auto;
+}

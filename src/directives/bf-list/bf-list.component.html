@@ -1,0 +1,10 @@
+<md-list class="bf-list" *ngIf="articles">
+   <ng-container *ngFor="let article of articles">
+        <md-list-item>
+    	   <img md-list-avatar src="{{article.imagebox}}" >
+    	   <h3 md-line> {{article.heading}} </h3>
+    	   <p md-line> {{article.description}}</p>
+    	</md-list-item>
+        <md-divider></md-divider>
+  </ng-container>
+</md-list>
