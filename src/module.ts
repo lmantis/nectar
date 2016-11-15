@@ -8,6 +8,7 @@ import { BfListModule } from './index';
 const NECTAR_MODULES = [
 	HelloWorldModule,
 	BfBadgeModule,
+	BfCardModule,
 	BfListModule
 ];
 
