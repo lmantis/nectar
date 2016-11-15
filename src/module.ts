@@ -1,14 +1,14 @@
 import {NgModule, ModuleWithProviders} from '@angular/core';
 
-import {HelloWorld} from './index';
+import {HelloWorldModule} from './index';
 
 const NECTAR_MODULES = [
-	HelloWorld];
+	HelloWorldModule];
 
 
 @NgModule({
 	imports: [
-	HelloWorld.forRoot()],
+	HelloWorldModule.forRoot()],
 	exports: NECTAR_MODULES
 })
 export class NectarRootModule {}

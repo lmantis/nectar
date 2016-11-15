@@ -5,6 +5,7 @@ import {PROVIDERS} from './services';
 export * from './directives';
 export * from './services';
 export * from './pipes';
+export * from './module';
 
 export default {
   directives: [DIRECTIVES],
