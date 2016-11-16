@@ -7,7 +7,12 @@
     "postinstall": "typings install",
     "prepublish": "tsc",
     "tsc": "tsc",
-    "typings": "typings"
+    "typings": "typings",
+    "html": "find ./src -name '*.html' -type f -exec cp --parents {} ./nectar \\;",
+    "css": "find ./src -name '*.css' -type f -exec cp --parents {} ./nectar \\;",
+    "whtml": "XCOPY /S /y .\\src\\*.html .\\nectar",
+    "wcss": "XCOPY /S /y .\\src\\*.css .\\nectar" ,
+    "wscss": "XCOPY /S /y .\\src\\*.scss .\\nectar" 
   },
   "repository": {
     "type": "git",
@@ -28,6 +33,11 @@
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "dependencies": {
+    "@angular/common": "^2.2.0",
+    "@angular/forms": "^2.2.0",
+    "@angular/http": "^2.2.0",
+    "@angular/material": "^2.0.0-alpha.10",
+    "@angular/platform-browser": "^2.2.0"
   },
   "devDependencies": {
     "@angular/core": "^2.2.0",

@@ -2,7 +2,7 @@
 import {SampleDirective} from './directives/sample.directive';
 import {SampleComponent} from './directives/sample.component';
 import {HelloWorld} from './directives/hello-world.component';
-import { BfListComponent } from './directives/bf-list/bf-list.component';
+import { BfList } from './directives/bf-list/bf-list.component';
 import { BfCardComponent, BfCardTitle, BfCardSubtitle } from './directives/bf-card/bf-card.component';
 import { BfBadgeComponent } from './directives/bf-badge/bf-badge.component';
 
@@ -20,7 +20,7 @@ export const DIRECTIVES: any[] = [
   SampleDirective,
   SampleComponent,
   HelloWorld,
-  BfListComponent,
+  BfList,
   BfCardComponent, BfCardTitle, BfCardSubtitle,
   BfBadgeComponent
 ];
