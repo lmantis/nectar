@@ -1,9 +1,11 @@
 import { NgModule, ModuleWithProviders, Component, OnInit, Input } from '@angular/core';
+import { MaterialModule } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'bf-badge',
-  templateUrl: './bf-badge.component.html',
-  styleUrls: ['./bf-badge.component.scss']
+  template: require('./bf-badge.component.html'),
+  styles: [require('./bf-badge.component.scss')]
 })
 export class BfBadgeComponent implements OnInit {
 
@@ -16,6 +18,7 @@ export class BfBadgeComponent implements OnInit {
 
 
 @NgModule({
+  imports: [MaterialModule, BrowserModule],
   exports: [
     BfBadgeComponent
   ],

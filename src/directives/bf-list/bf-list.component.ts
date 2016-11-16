@@ -3,46 +3,6 @@ import { Article } from '../../models/Article';
 import {MdListModule} from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 
-
-/*
-@Component({
-  selector: 'bf-list',
-  templateUrl: './bf-list.component.html',
-  styleUrls: ['./bf-list.component.css']
-})
-*/
-
-/*
-@Component({
-  moduleId: module.id,
-  selector: 'bf-list',
-  templateUrl: 'bf-list.component.html',
-  styleUrls: ['bf-list.component.css']
-})
-*/
-
-/*
-@Component({
-  selector: 'bf-list',
-  template: `<div>
-                  <button md-raised-button>hello</button>
-                  <md-list class="bf-list" *ngIf="articles">
-                     <ng-container *ngFor="let article of articles">
-                          <md-list-item>
-                           <img md-list-avatar src="{{article.imagebox}}" >
-                           <h3 md-line> {{article.heading}} </h3>
-                           <p md-line> {{article.description}}</p>
-                        </md-list-item>
-                          <md-divider></md-divider>
-                    </ng-container>
-                </md-list>
-               </div>`,
-  styleUrls: ['./bf-list.component.css']
-})
-*/
-
-
-
 @Component({
   selector: 'bf-list',
   template: require('./bf-list.component.html'),
@@ -59,8 +19,6 @@ export class BfList implements OnInit {
   }
 
 }
-
-//declare const module: {id: string};
 
 @NgModule({
   imports: [MdListModule, BrowserModule],
