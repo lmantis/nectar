@@ -1,10 +1,14 @@
 import { NgModule, ModuleWithProviders, Component, OnInit, Input, Directive } from '@angular/core';
+//import { MdCardModule, MdButtonModule, MdIconModule, MdCoreModule} from '@angular/material';
+import { MaterialModule, MdIconRegistry } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'bf-card',
-  templateUrl: './bf-card.component.html',
-  styleUrls: ['./bf-card.component.css']
+  template: require('./bf-card.component.html'),
+  styles: [require('./bf-card.component.css')]
 })
+
 
 export class BfCardComponent implements OnInit {
 
@@ -31,6 +35,7 @@ export class BfCardSubtitle {}
 
 
 @NgModule({
+   imports: [MaterialModule, BrowserModule],
   exports: [
     BfCardComponent,
     BfCardTitle,
@@ -46,7 +51,7 @@ export class BfCardModule {
   static forRoot(): ModuleWithProviders {
     return {
       ngModule: BfCardModule,
-      providers: []
+      providers: [MdIconRegistry]
     };
   }
 }

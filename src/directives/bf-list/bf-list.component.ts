@@ -1,14 +1,18 @@
 import { NgModule, ModuleWithProviders, Component, OnInit, Input } from '@angular/core';
 import { Article } from '../../models/Article';
+import {MdListModule} from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'bf-list',
-  templateUrl: './bf-list.component.html',
-  styleUrls: ['./bf-list.component.css']
+  template: require('./bf-list.component.html'),
+  styles: [require('./bf-list.component.css')]
 })
-export class BfListComponent implements OnInit {
-  @Input() articles : Article[];
-  
+
+
+export class BfList implements OnInit {
+ @Input() articles : Article[];
+
   constructor() { }
 
   ngOnInit() {
@@ -17,11 +21,12 @@ export class BfListComponent implements OnInit {
 }
 
 @NgModule({
+  imports: [MdListModule, BrowserModule],
   exports: [
-    BfListComponent,
+    BfList
   ],
   declarations: [
-    BfListComponent
+    BfList
   ],
 })
 export class BfListModule {
