@@ -1,5 +1,4 @@
 import { NgModule, ModuleWithProviders, Component, OnInit, Input } from '@angular/core';
-import { MaterialModule } from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
@@ -18,7 +17,7 @@ export class BfBadgeComponent implements OnInit {
 
 
 @NgModule({
-  imports: [MaterialModule, BrowserModule],
+  imports: [BrowserModule],
   exports: [
     BfBadgeComponent
   ],

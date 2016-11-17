@@ -1,6 +1,5 @@
 import { NgModule, ModuleWithProviders, Component, OnInit, Input, Directive } from '@angular/core';
-//import { MdCardModule, MdButtonModule, MdIconModule, MdCoreModule} from '@angular/material';
-import { MaterialModule, MdIconRegistry } from '@angular/material';
+import { MdCardModule, MdButtonModule, MdIconModule, MdListModule, MdIconRegistry} from '@angular/material';
 import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
@@ -35,7 +34,7 @@ export class BfCardSubtitle {}
 
 
 @NgModule({
-   imports: [MaterialModule, BrowserModule],
+   imports: [MdCardModule, MdButtonModule, MdIconModule, MdListModule, BrowserModule],
   exports: [
     BfCardComponent,
     BfCardTitle,
