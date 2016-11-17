@@ -7,23 +7,20 @@ import { BfBadgeModule } from './index';
 import { BfCardModule } from './index';
 import { BfListModule } from './index';
 
-//Components
+//import components
 //import { HelloWorld } from './index';
 
+/* import BrowserModule and MaterialModule to NECTAR_MODULES if components are imported
+const NECTAR_COMPONENTS = [
+	HelloWorld
+];
+*/
+
 const NECTAR_MODULES = [
-	//MaterialModule,
-	//HelloWorldModule,
 	BfBadgeModule,
 	BfCardModule,
 	BfListModule
 ];
-
-/*
-const NECTAR_COMPONENTS = [
-	HelloWorld
-	//BfList
-];
-*/
 
 @NgModule({
 	//declarations: NECTAR_COMPONENTS,
