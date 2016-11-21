@@ -8,7 +8,8 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test'
 
 //import { NectarModule } from 'nectar-lib/nectar';
-import { NectarModule } from  './../../../../nectar/nectar';
+//import { NectarModule } from  './../../../src';
+import { NectarModule } from './../../../nectar';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,10 @@ import { NectarModule } from  './../../../../nectar/nectar';
     HttpModule,
     NectarModule.forRoot(),
     RouterModule.forRoot([
-            { path: '', redirectTo: 'test', pathMatch: 'full' },
-            { path: 'test', component: TestComponent },
-            { path: '**', redirectTo: 'test' }
-    ])
+            { path: '', redirectTo: 'test-app', pathMatch: 'full' },
+            { path: 'test-app', component: TestComponent },
+            { path: '**', redirectTo: 'test-app' }
+        ])
   ],
   providers: [],
   bootstrap: [AppComponent]
