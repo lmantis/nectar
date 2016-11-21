@@ -1,6 +1,6 @@
 {
   "name": "nectar-lib",
-  "version": "0.2.1",
+  "version": "0.2.4",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
@@ -33,10 +33,10 @@
     "@angular/forms": "^2.2.0",
     "@angular/http": "^2.2.0",
     "@angular/material": "^2.0.0-alpha.10",
-    "@angular/platform-browser": "^2.2.0"
+    "@angular/platform-browser": "^2.2.0",
+    "@angular/core": "^2.2.0"
   },
-  "devDependencies": {
-    "@angular/core": "^2.2.0",
+  "devDependencies": {   
     "@types/es6-shim": "^0.31.32",
     "@types/jasmine": "^2.5.38",
     "@types/node": "^6.0.48",
