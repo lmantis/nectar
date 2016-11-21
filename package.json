@@ -1,6 +1,6 @@
 {
   "name": "nectar-lib",
-  "version": "0.2.1",
+  "version": "0.2.4",
   "scripts": {
     "lint": "tslint src/**/*.ts",
     "test": "tsc && karma start",
@@ -8,11 +8,7 @@
     "prepublish": "tsc",
     "tsc": "tsc",
     "typings": "typings",
-    "html": "find ./src -name '*.html' -type f -exec cp --parents {} ./nectar \\;",
-    "css": "find ./src -name '*.css' -type f -exec cp --parents {} ./nectar \\;",
-    "whtml": "XCOPY /S /y .\\src\\*.html .\\nectar",
-    "wcss": "XCOPY /S /y .\\src\\*.css .\\nectar" ,
-    "wscss": "XCOPY /S /y .\\src\\*.scss .\\nectar" 
+    "build" : " tsc && gulp copy-assets"
   },
   "repository": {
     "type": "git",
@@ -37,11 +33,17 @@
     "@angular/forms": "^2.2.0",
     "@angular/http": "^2.2.0",
     "@angular/material": "^2.0.0-alpha.10",
-    "@angular/platform-browser": "^2.2.0"
+    "@angular/platform-browser": "^2.2.0",
+    "@angular/core": "^2.2.0"
   },
-  "devDependencies": {
-    "@angular/core": "^2.2.0",
+  "devDependencies": {   
+    "@types/es6-shim": "^0.31.32",
+    "@types/jasmine": "^2.5.38",
+    "@types/node": "^6.0.48",
+    "@types/protractor": "^4.0.0",
+    "@types/selenium-webdriver": "^2.53.35",
     "codelyzer": "^0.0.20",
+    "gulp": "^3.9.1",
     "rxjs": "5.0.0-beta.12",
     "tslint": "^3.15.1",
     "typescript": "^2.0.3",

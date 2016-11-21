@@ -25,3 +25,6 @@ Desktop.ini
 
 # src
 src/*
+
+# Test App
+test-app/*
